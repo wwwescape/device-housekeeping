@@ -1,0 +1,343 @@
+<resources>
+    <string name="app_name">Device Housekeeping</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_history">Cleaning history</string>
+    <string name="title_app_caches">App caches</string>
+    <string name="title_exclusions">Excluded paths</string>
+    <string name="action_back">Back</string>
+
+    <!-- Actions -->
+    <string name="action_scan">Scan</string>
+    <string name="action_rescan">Scan again</string>
+    <string name="action_clean">Clean</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_done">Done</string>
+    <string name="action_grant">Grant</string>
+    <string name="action_open">Open</string>
+    <string name="action_close">Close</string>
+    <string name="action_remove">Remove</string>
+    <string name="action_details">Details</string>
+    <string name="action_copy_path">Copy path</string>
+    <string name="action_exclude">Exclude from future scans</string>
+    <string name="action_clear_app_caches">Clear app caches</string>
+    <string name="action_open_storage_settings">Open storage settings</string>
+    <string name="action_clear_history">Clear history</string>
+
+    <!-- Storage hero -->
+    <string name="hero_internal_storage">Internal storage</string>
+    <string name="hero_used_of_total">used of %1$s</string>
+    <string name="hero_ring_used">used</string>
+    <string name="hero_legend_used">Used</string>
+    <string name="hero_legend_free">Free</string>
+    <string name="hero_legend_reclaimable">Can be freed</string>
+
+    <!-- Access -->
+    <string name="permission_storage_title">Storage access needed</string>
+    <string name="permission_storage_body_all_files">To find leftover files anywhere in shared storage, Android asks you to allow \"All files access\". Device Housekeeping only reads file names and sizes, never their contents, and deletes nothing without your confirmation.</string>
+    <string name="permission_storage_body_legacy">To find leftover files in shared storage, allow access to photos, media and files. Device Housekeeping only reads file names and sizes, never their contents, and deletes nothing without your confirmation.</string>
+    <string name="permission_usage_title">See every app\'s cache</string>
+    <string name="permission_usage_body">Android reports how much cache each app holds only to apps with Usage access. It\'s optional and read-only: it\'s used for nothing but this list.</string>
+
+    <!-- Idle -->
+    <string name="idle_title">Ready when you are</string>
+    <string name="idle_body">A scan looks only for files that are safe to remove — caches, leftovers, abandoned downloads. Nothing is deleted until you\'ve reviewed it and tapped Clean.</string>
+    <string name="idle_last_cleaned">Last cleaned %1$s · freed %2$s</string>
+
+    <!-- Scanning -->
+    <string name="scan_title">Scanning…</string>
+    <string name="scan_found">found</string>
+    <plurals name="scan_files_checked">
+        <item quantity="one">%1$s file checked</item>
+        <item quantity="other">%1$s files checked</item>
+    </plurals>
+
+    <!-- Results -->
+    <string name="results_found_label">Found</string>
+    <string name="results_stats">%1$s · %2$s in %3$s s</string>
+    <string name="results_empty_title">Nothing to clean</string>
+    <string name="results_empty_body">Your storage is already tidy — no junk files were found.</string>
+    <string name="section_safe_to_clean">Safe to clean</string>
+    <string name="section_review">Review before cleaning</string>
+    <string name="section_review_hint">Very likely junk, but worth a look — these are never selected for you.</string>
+    <string name="results_app_caches_title">Other apps\' caches</string>
+    <string name="results_app_caches_body">Since Android 11 only the system can clear these. See how much each app holds and clear them in one step.</string>
+    <string name="results_residuals_skipped_title">Leftover folders weren\'t checked</string>
+    <string name="results_residuals_skipped_body">The list of installed apps couldn\'t be confirmed, so no folder was labelled as a leftover rather than risk getting it wrong.</string>
+    <string name="category_selected_of">%1$d of %2$d selected</string>
+    <plurals name="items_count">
+        <item quantity="one">%1$s item</item>
+        <item quantity="other">%1$s items</item>
+    </plurals>
+    <plurals name="items_selected">
+        <item quantity="one">%1$s item selected</item>
+        <item quantity="other">%1$s items selected</item>
+    </plurals>
+    <plurals name="files_count">
+        <item quantity="one">%1$d file</item>
+        <item quantity="other">%1$d files</item>
+    </plurals>
+
+    <!-- Confirm -->
+    <string name="confirm_title">Clean %1$s?</string>
+    <string name="confirm_body">Each item is checked again just before it\'s deleted. Anything that changed since the scan is left alone.</string>
+    <plurals name="confirm_review_warning">
+        <item quantity="one">Includes %1$d item you chose from \"Review before cleaning\".</item>
+        <item quantity="other">Includes %1$d items you chose from \"Review before cleaning\".</item>
+    </plurals>
+
+    <!-- Cleaning & done -->
+    <string name="clean_title">Cleaning…</string>
+    <string name="clean_freed">freed</string>
+    <string name="clean_item_of">Item %1$d of %2$d</string>
+    <string name="done_title">All clean</string>
+    <string name="done_freed_caption">deleted and handed back to free space</string>
+    <string name="done_measured">Free space gained (measured)</string>
+    <string name="done_items">Removed</string>
+    <plurals name="done_items_value">
+        <item quantity="one">%1$s item · %2$s files</item>
+        <item quantity="other">%1$s items · %2$s files</item>
+    </plurals>
+    <string name="done_skipped">Left alone</string>
+    <string name="done_skipped_body">These changed after the scan (or their app was reinstalled), so they were kept.</string>
+    <string name="done_failed">Couldn\'t delete</string>
+
+    <!-- Home extras -->
+    <string name="app_caches_card_loading">Checking app caches…</string>
+    <string name="app_caches_card_no_access">See how much cache every app is holding</string>
+    <plurals name="app_caches_card_summary">
+        <item quantity="one">%1$s cached by %2$s app</item>
+        <item quantity="other">%1$s cached across %2$s apps</item>
+    </plurals>
+    <string name="section_how_it_stays_safe">How it stays safe</string>
+    <string name="promise_rules_title">Only certain junk is preselected</string>
+    <string name="promise_rules_body">Caches, thumbnails, abandoned temporary files and duplicate installers. Anything less certain waits for your review.</string>
+    <string name="promise_recheck_title">Re-checked before deleting</string>
+    <string name="promise_recheck_body">Every item is verified again at the moment of deletion — size, date and rule. Links are never followed outside a junk folder.</string>
+    <string name="promise_personal_title">Your files stay yours</string>
+    <string name="promise_personal_body">Photos, videos, music and documents are never judged by name. Nothing is uploaded; there\'s no internet access at all.</string>
+
+    <!-- Categories -->
+    <string name="safety_safe">Safe</string>
+    <string name="safety_review">Review</string>
+
+    <string name="category_app_caches">App caches</string>
+    <string name="category_app_caches_summary">Cached files apps keep in shared storage</string>
+    <string name="category_app_caches_why">Each folder is an installed app\'s own \"cache\" folder. Android requires apps to cope with their cache disappearing at any time and to rebuild it when needed, so clearing it never loses settings, accounts or saved content — the app may just load a little slower the first time.</string>
+
+    <string name="category_thumbnails">Thumbnail caches</string>
+    <string name="category_thumbnails_summary">Preview images galleries rebuild on demand</string>
+    <string name="category_thumbnails_why">\".thumbnails\" folders hold small preview copies of your photos and videos, made by gallery apps for faster browsing. Your originals aren\'t touched. Galleries regenerate the previews the next time they need them.</string>
+
+    <string name="category_temp_files">Temporary files</string>
+    <string name="category_temp_files_summary">Abandoned temp files and unfinished downloads</string>
+    <string name="category_temp_files_why">Files with temporary or partial-download extensions (.tmp, .temp, .crdownload, .part, .partial) and saves Android itself marked as never finished. Only files untouched for at least the minimum age in Settings are offered, so nothing still being written is included.</string>
+
+    <string name="category_logs">Logs &amp; crash dumps</string>
+    <string name="category_logs_summary">Diagnostic logs, crash and heap dumps</string>
+    <string name="category_logs_why">Log files (.log), crash dumps (.dmp) and memory dumps (.hprof) written by apps for troubleshooting. They\'re never needed for an app to work. Files inside your own folders (Documents, Download, DCIM, Music and so on) are never included here.</string>
+
+    <string name="category_foreign_files">PC &amp; Mac leftovers</string>
+    <string name="category_foreign_files_summary">Thumbs.db, .DS_Store, desktop.ini and ._ files</string>
+    <string name="category_foreign_files_why">Windows and macOS quietly add these index and metadata files when storage is connected to a computer. Android never reads them. \"._\" files are only included when they\'re small enough to be Finder metadata.</string>
+
+    <string name="category_installed_apks">Installed app installers</string>
+    <string name="category_installed_apks_summary">APKs for apps you already have</string>
+    <string name="category_installed_apks_why">Each installer belongs to an app that\'s already installed at the same or a newer version, so the file is no longer needed. Removing it doesn\'t affect the installed app. Keep one only if you want to downgrade later.</string>
+
+    <string name="category_other_apks">Other installers</string>
+    <string name="category_other_apks_summary">APKs for apps that aren\'t installed</string>
+    <string name="category_other_apks_why">Installers for apps that aren\'t installed, are newer than what you have, or can\'t be read (often an incomplete download). You may be keeping some on purpose, so check the list before cleaning.</string>
+
+    <string name="category_residuals">Leftover app folders</string>
+    <string name="category_residuals_summary">Folders of apps you\'ve uninstalled</string>
+    <string name="category_residuals_why">These folders are named after apps that are no longer installed on this device. They\'re usually useless, but some apps save photos, recordings or backups in their folder — items holding media are marked. If you plan to reinstall the app, keep its folder.</string>
+
+    <string name="category_trash">Recycle bin</string>
+    <string name="category_trash_summary">Files you deleted, kept for 30 days</string>
+    <string name="category_trash_why">Items you\'ve already moved to the trash in Photos or Files. Android keeps them for up to 30 days in case you change your mind, then deletes them itself. Cleaning them now frees the space immediately — but they can\'t be restored afterwards.</string>
+
+    <!-- Category screen -->
+    <string name="category_hero_caption">%1$s · %2$s selected</string>
+    <string name="category_why_safe">Why it\'s safe</string>
+    <string name="category_why_review">What to check</string>
+    <string name="category_select_all">Select all (%1$d of %2$d)</string>
+    <string name="category_empty_title">Nothing here</string>
+    <string name="category_empty_body">Everything in this category has been cleaned or excluded.</string>
+    <string name="category_no_results_body">Run a scan from Home to see what\'s in this category.</string>
+    <string name="sort_size">Largest</string>
+    <string name="sort_name">Name</string>
+    <string name="sort_oldest">Oldest</string>
+    <string name="detail_apk_not_installed">Version %1$s · not installed</string>
+    <string name="detail_apk_installed">Version %1$s · installed: %2$s</string>
+    <string name="detail_apk_unreadable">Can\'t be read — likely an incomplete download</string>
+    <string name="detail_residual">From %1$s, no longer installed</string>
+    <plurals name="detail_residual_media">
+        <item quantity="one">contains %1$d photo, video or audio file</item>
+        <item quantity="other">contains %1$d photos, videos or audio files</item>
+    </plurals>
+    <string name="detail_app_cache">%1$s</string>
+    <string name="detail_trashed">In the recycle bin</string>
+    <string name="detail_trashed_expires">Android removes it automatically %1$s</string>
+    <string name="detail_pending">An unfinished download or save</string>
+    <string name="details_size">Size</string>
+    <string name="details_type">Type</string>
+    <string name="details_type_folder">Folder · %1$s</string>
+    <string name="details_type_file">File</string>
+    <string name="details_modified">Last modified</string>
+    <string name="details_path">Location</string>
+    <string name="details_exclude_hint">Excluding keeps this item — and anything inside it — out of every future scan. You can undo it in Settings.</string>
+    <string name="toast_path_copied">Path copied</string>
+
+    <!-- App caches -->
+    <string name="app_caches_hero_label">Cached by apps</string>
+    <string name="app_caches_hero_unknown">Grant Usage access to see the total</string>
+    <plurals name="app_caches_hero_detail">
+        <item quantity="one">across %1$d app</item>
+        <item quantity="other">across %1$d apps</item>
+    </plurals>
+    <plurals name="app_caches_hero_detail_external">
+        <item quantity="one">across %1$d app · %2$s in shared storage</item>
+        <item quantity="other">across %1$d apps · %2$s in shared storage</item>
+    </plurals>
+    <string name="app_caches_hero_explainer">Android trims app caches by itself when space runs low. Clearing them never removes your data, but apps rebuild them as you use them, so the space comes back gradually.</string>
+    <string name="app_caches_clear_external_title">Clear app caches in shared storage</string>
+    <string name="app_caches_clear_external_body">Android shows its own confirmation, then removes the cache folders every app keeps in shared storage. Only caches are touched.</string>
+    <string name="app_caches_clear_external_needs_access">Needs All files access — grant it from Home first.</string>
+    <string name="app_caches_clear_external_unsupported">This device\'s version of Android doesn\'t include the system clear-cache dialog. Android\'s own storage tools can still free app caches.</string>
+    <string name="app_caches_clear_cancelled">Nothing was cleared. The dialog was closed, or this device declined the request without showing it.</string>
+    <string name="app_caches_clear_unavailable">Android couldn\'t open its clear-cache dialog on this device. Try Android\'s storage manager below.</string>
+    <string name="app_caches_system_freed">Android cleared app caches and freed %1$s.</string>
+    <string name="app_caches_system_tool_title">Android\'s storage manager</string>
+    <string name="app_caches_system_tool_body">Opens the system\'s own tools for freeing space, including per-app storage.</string>
+    <string name="app_caches_list_title">By app</string>
+    <string name="app_caches_list_hint">Tap an app to open its App info, where Storage → Clear cache removes its internal cache.</string>
+    <string name="app_caches_show_system">Show system apps</string>
+    <string name="app_caches_row_detail">App %1$s · Data %2$s</string>
+
+    <!-- History -->
+    <string name="history_lifetime_label">Freed so far</string>
+    <plurals name="history_runs">
+        <item quantity="one">over %1$d cleaning</item>
+        <item quantity="other">over %1$d cleanings</item>
+    </plurals>
+    <string name="history_recent">Recent</string>
+    <string name="history_empty_title">No cleanings yet</string>
+    <string name="history_empty_body">Each cleaning is logged here with what it freed. The log stays on this device.</string>
+    <string name="history_kind_clean">Scan &amp; clean</string>
+    <string name="history_kind_system">App caches (by Android)</string>
+    <string name="history_kind_auto">Automatic cleaning</string>
+    <string name="history_measured">Measured +%1$s</string>
+    <string name="history_clear_title">Clear history?</string>
+    <string name="history_clear_body">This removes the log and the \"freed so far\" total. It doesn\'t affect your files.</string>
+
+    <!-- Exclusions -->
+    <string name="exclusions_intro">Excluded paths, and everything inside them, are never offered by a scan nor touched by cleaning.</string>
+    <string name="exclusions_empty_title">No exclusions</string>
+    <string name="exclusions_empty_body">Exclude an item from its details sheet after a scan.</string>
+
+    <!-- Settings: cleaning -->
+    <string name="section_cleaning">Cleaning</string>
+    <string name="setting_min_age">Minimum age of temp &amp; log files</string>
+    <string name="min_age_hour">1 hour</string>
+    <string name="min_age_day">1 day (recommended)</string>
+    <string name="min_age_week">1 week</string>
+    <string name="setting_auto_clean">Automatic cleaning</string>
+    <string name="setting_auto_clean_subtitle_off">Off — clean Safe items on a schedule</string>
+    <string name="setting_auto_clean_subtitle_on">%1$s · Safe items only, never Review</string>
+    <string name="auto_clean_off">Off</string>
+    <string name="auto_clean_daily">Daily</string>
+    <string name="auto_clean_weekly">Weekly</string>
+    <string name="setting_confirm">Confirm before cleaning</string>
+    <string name="setting_confirm_subtitle">Show a summary of what will be deleted first</string>
+    <string name="setting_removable">Include SD cards &amp; USB drives</string>
+    <string name="setting_removable_subtitle">Scan removable storage as well as internal</string>
+    <string name="setting_exclusions_none">None</string>
+    <string name="setting_exclusions_count">%1$d excluded</string>
+
+    <!-- Settings: access -->
+    <string name="section_access">Access</string>
+    <string name="setting_access_all_files">All files access</string>
+    <string name="setting_access_storage">Storage permission</string>
+    <string name="setting_access_usage">Usage access</string>
+    <string name="access_granted">Granted</string>
+    <string name="access_required">Not granted — needed to scan</string>
+    <string name="access_optional">Not granted — optional, for app cache sizes</string>
+
+    <!-- Settings: appearance -->
+    <string name="section_appearance">Appearance</string>
+    <string name="setting_dynamic_color">Dynamic Color (Material You)</string>
+    <string name="setting_dynamic_color_subtitle">Sync with wallpaper colors</string>
+    <string name="setting_color_theme">Color Theme</string>
+    <string name="setting_theme">Theme</string>
+    <string name="theme_mode_light">Light</string>
+    <string name="theme_mode_dark">Dark</string>
+    <string name="theme_mode_system">System Default</string>
+    <string name="color_theme_default">App Default</string>
+    <string name="color_theme_ocean">Ocean</string>
+    <string name="color_theme_forest">Forest</string>
+    <string name="color_theme_sunset">Sunset</string>
+    <string name="color_theme_grape">Grape</string>
+    <string name="color_theme_rose">Rose</string>
+    <string name="color_theme_slate">Slate</string>
+    <string name="color_theme_gold">Gold</string>
+    <string name="color_theme_teal">Teal</string>
+    <string name="color_theme_plum">Plum</string>
+    <string name="color_theme_moss">Moss</string>
+    <string name="color_theme_coral">Coral</string>
+    <string name="color_theme_indigo">Indigo</string>
+    <string name="color_theme_mustard">Mustard</string>
+    <string name="color_theme_crimson">Crimson</string>
+    <string name="color_theme_mint">Mint</string>
+    <string name="color_theme_periwinkle">Periwinkle</string>
+    <string name="setting_theme_contrast">Contrast</string>
+    <string name="contrast_standard">Standard</string>
+    <string name="contrast_medium">Medium</string>
+    <string name="contrast_high">High</string>
+    <string name="setting_pure_dark">Pure Black</string>
+    <string name="setting_pure_dark_subtitle">True black background in dark theme</string>
+    <string name="setting_absolute_dark">Absolute Black</string>
+    <string name="setting_absolute_dark_subtitle">Flatten every surface to black in dark theme</string>
+
+    <!-- Settings: about -->
+    <string name="section_about">About</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="privacy_statement_body">Device Housekeeping works entirely on your device. It reads file names, sizes and dates to find junk — never file contents — and keeps its cleaning log locally. There\'s no account, no analytics and no internet access.</string>
+    <string name="setting_faq">Questions &amp; answers</string>
+    <string name="setting_faq_subtitle">What gets cleaned, and what doesn\'t</string>
+    <string name="section_privacy_policy">Privacy Policy</string>
+    <string name="section_open_source_licenses">Open-source licenses</string>
+    <string name="settings_row_licenses_subtitle">Third-party software notices</string>
+
+    <!-- FAQ -->
+    <string name="faq_q_ram">Why is there no RAM booster?</string>
+    <string name="faq_a_ram">Android manages memory itself and reloads anything a \"booster\" closes, using more battery to do so. Free RAM is wasted RAM — so this app doesn\'t pretend otherwise.</string>
+    <string name="faq_q_caches">Why can\'t it clear every app\'s cache with one tap?</string>
+    <string name="faq_a_caches">Since Android 11 only the system may delete other apps\' caches. The App caches screen shows exactly how much each app holds and hands you Android\'s own one-step clear for shared-storage caches, plus a shortcut to each app\'s App info for the rest. Android also trims caches automatically when space runs low.</string>
+    <string name="faq_q_safe">What makes an item \"Safe\"?</string>
+    <string name="faq_a_safe">A Safe category is defined by a rule that leaves no doubt: an app\'s cache folder, a regenerable thumbnail cache, a temp or partial file untouched for a day, a log, PC metadata, or an installer for an app you already have. Only these are preselected.</string>
+    <string name="faq_q_review">And \"Review\"?</string>
+    <string name="faq_a_review">Review items are very likely junk but could matter to you — a leftover folder an uninstalled app saved photos in, an installer you\'re keeping, or something in the recycle bin. They\'re never selected unless you choose them.</string>
+    <string name="faq_q_measured">Why do \"freed\" and \"measured\" differ slightly?</string>
+    <string name="faq_a_measured">\"Freed\" adds up the sizes of the deleted files. \"Measured\" is the change in free space the file system reports, which also reflects block rounding and other apps writing at the same time. Both are shown so the gain is real, not estimated.</string>
+    <string name="faq_q_access">Why does it need All files access?</string>
+    <string name="faq_a_access">Junk is spread across shared storage, so a cleaner has to be able to list it. The app reads only names, sizes and dates, has no internet permission, and every deletion is shown to you first.</string>
+
+    <!-- Automatic cleaning notification -->
+    <string name="notification_channel_auto_clean">Automatic cleaning</string>
+    <string name="notification_channel_auto_clean_description">A quiet note after each scheduled cleaning</string>
+    <string name="notification_auto_clean_title">Freed %1$s in the background</string>
+    <plurals name="notification_auto_clean_text">
+        <item quantity="one">Cleaned %1$d Safe item. Tap to see your history.</item>
+        <item quantity="other">Cleaned %1$d Safe items. Tap to see your history.</item>
+    </plurals>
+
+    <!-- Licenses -->
+    <string name="section_licenses_intro_title">Compliance &amp; Credits</string>
+    <string name="section_licenses_intro_body">Device Housekeeping is built using world-class open-source software. Below is a list of the libraries that make this app possible.</string>
+    <string name="license_badge_apache">Apache 2.0</string>
+    <string name="license_badge_android_sdk">Android SDK License</string>
+    <string name="library_version_license_format">%1$s • %2$s</string>
+    <string name="licenses_footer_format">%1$s © %2$d. All trademarks are the property of their respective owners.</string>
+    <string name="lib_desc_compose">UI toolkit for native Android</string>
+    <string name="lib_desc_core_ktx">Kotlin extensions for Android core APIs</string>
+</resources>
